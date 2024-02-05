@@ -17,8 +17,9 @@ public:
 
     }
     if(fast==nullptr){
-
+ListNode *del=head;
         head=head->next;
+        delete del;
         return head;
     }
 ListNode *slow=head;
